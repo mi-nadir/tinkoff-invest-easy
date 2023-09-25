@@ -1,6 +1,6 @@
 # Класс для работы с Тинькофф Инвест API на Python
 
-Проверен на Pythom 3.8, в файле class_tinkoff_api.py редактируем строки с "иксами"
+Проверен на Python 3.8, в файле class_tinkoff_api.py редактируем строки с "иксами"
 ```
 TOKEN = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 accounts = ["XXXXXXXXXX"]
