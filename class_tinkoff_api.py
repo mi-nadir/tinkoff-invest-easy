@@ -77,8 +77,7 @@ class Tinkoff_API:
 			r = await instruments.shares(instrument_status=InstrumentStatus.INSTRUMENT_STATUS_ALL)
 			for instr in r.instruments:
 				if(instr.country_of_risk == "RU" and instr.currency == "rub" and instr.for_qual_investor_flag == False and instr.api_trade_available_flag == True and (instr.share_type == ShareType.SHARE_TYPE_PREFERRED or instr.share_type == ShareType.SHARE_TYPE_COMMON)):
-					pass
-					#print(instr.uid+" - "+str(instr.short_enabled_flag)+" - "+str(instr.share_type)+" - "+instr.ticker+" - "+instr.name+" - "+str(instr.lot))
+					print(instr.uid+" - "+str(instr.short_enabled_flag)+" - "+str(instr.share_type)+" - "+instr.ticker+" - "+instr.name+" - "+str(instr.lot))
 					
 
 	async def AddStreamOrderBook(self, instrument, depth):
